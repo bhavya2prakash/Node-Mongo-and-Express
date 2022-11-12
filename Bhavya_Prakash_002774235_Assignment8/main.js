@@ -24,7 +24,7 @@ const schema ={
         type:String,
         trim:true,
         required:[true,'Name is required'],
-        match:[/^[a-zA-Z].*[\s\.]*$/,'Please enter a valid Name']
+        match:[/^[a-zA-Z\s]{1,}$/,'Please enter a valid Name']
     },
     email:{
         type:String,
